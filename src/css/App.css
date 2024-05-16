@@ -1,0 +1,13 @@
+.App {
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.sayHello{
+  width: 300px;
+  height: 100px;
+  padding: 4px;
+  color: white;
+  margin:4px;
+  background: orange;
+}

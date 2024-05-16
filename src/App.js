@@ -1,12 +1,20 @@
 import React, { Component} from "react";
-import "./App.css";
-
+import "./css/App.css";
+import HelloWorld from "./components/sayHello/sayHello"
+ 
 class App extends Component{
+  users = require('./fakedata/persons.json');
+  
   render(){
+    console.log(this.users)
     return(
-      <div className="App">
-        <h1> Hello, World! </h1>
-      </div>
+      <>
+      {
+        this.users.users.map(function(user, index) {
+          return  <HelloWorld   props= {user} key={user.id}/>;
+        })
+      }
+      </>
     );
   }
 }
