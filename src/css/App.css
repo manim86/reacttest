@@ -5,9 +5,16 @@
 
 .sayHello{
   width: 300px;
-  height: 100px;
+  height: 300px;
   padding: 4px;
   color: white;
   margin:4px;
+  float: left;
   background: orange;
+  overflow: hidden;
+}
+
+.sayHello p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
 }
